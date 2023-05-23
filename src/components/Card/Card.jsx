@@ -30,6 +30,9 @@ const StyledCard = styled.div`
   }
   .ammount-wrapper {
     margin-bottom: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
   }
   .eth {
     margin-right: 4px;
