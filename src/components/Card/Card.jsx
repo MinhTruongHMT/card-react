@@ -7,7 +7,9 @@ const StyledCard = styled.div`
   border-radius: 20px;
   font-size: 12px;
   line-height: 16px;
-
+  width: 164px;
+  height: 167px;
+  margin: 10px;
   /* Text/color2 */
 
   color: #747475;
@@ -22,9 +24,8 @@ const StyledCard = styled.div`
   .amount {
     font-size: 24px;
     line-height: 31px;
-
+    font-weight:700;
     /* Text/color1 */
-
     color: #27262E;
   }
   .ammount-wrapper {
@@ -33,19 +34,30 @@ const StyledCard = styled.div`
   .eth {
     margin-right: 4px;
   }
+  .content{
+    display: block;
+    font-weight:700;
+    font-size:24px;
+    color:black;
+    margin-bottom: 22px;
+  }
 
 `
 export const Card = ({title, amount, content, percent}) => {
   return <StyledCard>
+
     <div className='title'>{title}</div>
+
     { amount?
       <div className='ammount-wrapper'>
       <img className='eth' src={ethIcon} alt="eth-icon"></img><span className='amount'>{amount}</span> ETH
     </div>:
     <div>
-    <span>{content}</span> %
+    <span className='content'>{content} %</span> 
   </div>
     }
+
+
     <Button percent={percent} boderColor="#E9E9E9">{percent}%</Button>
   </StyledCard>
 }
