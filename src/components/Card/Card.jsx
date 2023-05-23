@@ -9,7 +9,7 @@ const StyledCard = styled.div`
   line-height: 16px;
   width: 164px;
   height: 167px;
-  margin: 10px;
+
   /* Text/color2 */
 
   color: #747475;

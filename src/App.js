@@ -28,8 +28,8 @@ const StyleDiv = styled.div`
   height: 50%;
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
  
-  
 `;
 function App() {
   return (
